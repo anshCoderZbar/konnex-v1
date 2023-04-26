@@ -21,7 +21,7 @@ export const SingleJobPage = () => {
   });
   useEffect(() => {
     setData(...singleJob);
-  }, [data]);
+  }, [singleJob]);
 
   return (
     <>
@@ -132,7 +132,7 @@ export const SingleJobPage = () => {
                   <br />{" "}
                 </span>
                 <span style={{ color: "#808080" }}>
-                  Art der Anstellung: 
+                  Art der Anstellung:
                   <strong>Vollzeit mit Übernahmemöglichkeit</strong>
                   <br />{" "}
                 </span>

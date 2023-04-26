@@ -18,7 +18,7 @@ export const Navbar = () => {
               <ul className="title-area">
                 <li className="name"></li>
                 <li className="toggle-topbar menu-icon">
-                  <a href="#" onClick={() => setActive(!active)}>
+                  <a href="/" onClick={() => setActive(!active)}>
                     <span>Menu</span>
                   </a>
                 </li>
@@ -39,9 +39,8 @@ export const Navbar = () => {
                               ? setSubMenu(!subMenu)
                               : setSubMenu(false);
                           }}
-                          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${
-                            data?.subMenu?.length >= 1 ? "has-dropdown" : " "
-                          } menu-item-573 ${subMenu ? "moved" : ""}`}
+                          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${data?.subMenu?.length >= 1 ? "has-dropdown" : " "
+                            } menu-item-573 ${subMenu ? "moved" : ""}`}
                         >
                           <Link to={data?.slug ? data?.slug : ""}>
                             {data?.title}
@@ -49,16 +48,16 @@ export const Navbar = () => {
                           <ul className="sub-menu dropdown">
                             {data?.subMenu?.length >= 1
                               ? data?.subMenu?.map((data) => {
-                                  return (
-                                    <li
-                                      key={data?.id}
-                                      id="menu-item-299"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"
-                                    >
-                                      <Link to={data?.slug}>{data?.title}</Link>
-                                    </li>
-                                  );
-                                })
+                                return (
+                                  <li
+                                    key={data?.id}
+                                    id="menu-item-299"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"
+                                  >
+                                    <Link to={data?.slug}>{data?.title}</Link>
+                                  </li>
+                                );
+                              })
                               : ""}
                           </ul>
                         </li>
