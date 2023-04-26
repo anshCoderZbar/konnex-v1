@@ -1,0 +1,15 @@
+.bannerImg .mobile-s {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    .bannerImg .mobile-s {
+      display: block;
+    }
+    .bannerImg .dextop-s {
+      display: none;
+    }
+    .bannerImg .carousel-indicators {
+      display: none;
+    }
+  }
+  
