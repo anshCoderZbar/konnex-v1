@@ -17,6 +17,7 @@ import { Outsourcing } from "pages/companies/Outsourcing";
 import { MasterVendorManagement } from "pages/companies/MasterVendorManagement";
 import { Philosophy } from "pages/konnex/Philosophy";
 import { History } from "pages/konnex/History";
+import { Quality } from "pages/konnex/Quality";
 
 const AllRoutes = () => {
   return (
@@ -140,6 +141,14 @@ const AllRoutes = () => {
           element={
             <PublicRoutes>
               <History />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/quality-and-safety"
+          element={
+            <PublicRoutes>
+              <Quality />
             </PublicRoutes>
           }
         />

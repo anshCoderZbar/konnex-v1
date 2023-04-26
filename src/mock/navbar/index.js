@@ -26,7 +26,7 @@ export const navbarData = [
     subMenu: [
       { id: "1", title: "Unsere Philosophie", slug: "/philosophy" },
       { id: "2", title: "Werte und Geschichte", slug: "/values-and-history" },
-      { id: "3", title: "Qualität und Sicherheit", slug: "/" },
+      { id: "3", title: "Qualität und Sicherheit", slug: "/quality-and-safety" },
       { id: "4", title: "Ihre Ansprechpartner", slug: "/" },
       { id: "5", title: "Zertifikate und Urkunden", slug: "/" },
       { id: "6", title: "Sponsoring – SC Köln-Mülheim Nord", slug: "/" },
