@@ -12,6 +12,16 @@ import { SingleJobPage } from "pages/applicants/SingleJobPage";
 import { CompaniesAdvantages } from "pages/companies/CompaniesAdvantages";
 import { TemporaryWork } from "pages/companies/TemporaryWork";
 import { Recruitment } from "pages/companies/Recruitment";
+import { OnSiteManagement } from "pages/companies/OnSiteManagement";
+import { Outsourcing } from "pages/companies/Outsourcing";
+import { MasterVendorManagement } from "pages/companies/MasterVendorManagement";
+import { Philosophy } from "pages/konnex/Philosophy";
+import { History } from "pages/konnex/History";
+import { Quality } from "pages/konnex/Quality";
+import { ContactPerson } from "pages/konnex/ContactPerson";
+import { Certificates } from "pages/konnex/Certificates";
+import { SponshirShipPage } from "pages/konnex/SponshirShipPage";
+import { ChineseSponsoring } from "pages/konnex/ChineseSponsoring";
 
 const AllRoutes = () => {
   return (
@@ -95,6 +105,86 @@ const AllRoutes = () => {
           element={
             <PublicRoutes>
               <Recruitment />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/on-site-management"
+          element={
+            <PublicRoutes>
+              <OnSiteManagement />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/outsourcing"
+          element={
+            <PublicRoutes>
+              <Outsourcing />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/master-vendor-management"
+          element={
+            <PublicRoutes>
+              <MasterVendorManagement />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/philosophy"
+          element={
+            <PublicRoutes>
+              <Philosophy />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/values-and-history"
+          element={
+            <PublicRoutes>
+              <History />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/quality-and-safety"
+          element={
+            <PublicRoutes>
+              <Quality />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/contact-person"
+          element={
+            <PublicRoutes>
+              <ContactPerson />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/certificates-and-deeds"
+          element={
+            <PublicRoutes>
+              <Certificates />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/sponshirship"
+          element={
+            <PublicRoutes>
+              <SponshirShipPage />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/chinese-sponsoring"
+          element={
+            <PublicRoutes>
+              <ChineseSponsoring />
             </PublicRoutes>
           }
         />
