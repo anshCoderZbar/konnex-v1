@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Banner } from "common/components/Banner";
-
-import desktop from "assets/slide/konnex-zeitarbeit-koeln-krefeld-name2.jpg";
-import mobile from "assets/slide/konnex-zeitarbeit-koeln-krefeld-jobssuche_spezialisten.jpg";
 import { MainSearch } from "common/components/Main-search";
 import { ContactCard } from "common/components/Contact-card";
 import { BlogCard } from "common/components/Blog-card";
 import { blogs } from "mock/blog";
 import { TestimonialCard } from "common/components/Testimonial-card";
+
+import desktop from "assets/slide/konnex-zeitarbeit-koeln-krefeld-name2.jpg";
+import mobile from "assets/slide/konnex-zeitarbeit-koeln-krefeld-jobssuche_spezialisten.jpg";
 
 export const History = () => {
     return (

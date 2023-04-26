@@ -18,6 +18,10 @@ import { MasterVendorManagement } from "pages/companies/MasterVendorManagement";
 import { Philosophy } from "pages/konnex/Philosophy";
 import { History } from "pages/konnex/History";
 import { Quality } from "pages/konnex/Quality";
+import { ContactPerson } from "pages/konnex/ContactPerson";
+import { Certificates } from "pages/konnex/Certificates";
+import { SponshirShipPage } from "pages/konnex/SponshirShipPage";
+import { ChineseSponsoring } from "pages/konnex/ChineseSponsoring";
 
 const AllRoutes = () => {
   return (
@@ -149,6 +153,38 @@ const AllRoutes = () => {
           element={
             <PublicRoutes>
               <Quality />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/contact-person"
+          element={
+            <PublicRoutes>
+              <ContactPerson />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/certificates-and-deeds"
+          element={
+            <PublicRoutes>
+              <Certificates />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/sponshirship"
+          element={
+            <PublicRoutes>
+              <SponshirShipPage />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/chinese-sponsoring"
+          element={
+            <PublicRoutes>
+              <ChineseSponsoring />
             </PublicRoutes>
           }
         />
