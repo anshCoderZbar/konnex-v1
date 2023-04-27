@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { Cookies } from "./Cookies";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <React.Fragment>
       <section id="location">
@@ -13,7 +19,7 @@ const Footer = () => {
                   <a
                     href="http://maps.google.com/?q=Weyerstra%c3%9fe%2027%2050676%20K%c3%b6ln"
                     target="_blank"
-                    
+
                     rel="noreferrer"
                   >
                     <i className="icon-pin-icon">
@@ -66,24 +72,25 @@ const Footer = () => {
                 id="menu-item-1698"
                 className="menu-item menu-item-type-custom menu-item-object-custom menu-item-1698"
               >
-                <a href="#consent-change">Privatsphäre-Einstellungen ändern</a>
+                <a href="#constant" onClick={toggleDrawer} >Privatsphäre-Einstellungen ändern</a>
               </li>
               <li
                 id="menu-item-491"
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-491"
               >
-                <a href="impressum/index.html">Impressum</a>
+                <Link to="/imprint">Impressum</Link>
               </li>
               <li
                 id="menu-item-1593"
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1593"
               >
-                <a href="datenschutz/index.html">Datenschutz</a>
+                <Link to="/data-protection">Datenschutz</Link>
               </li>
             </ul>
           </div>
         </div>
       </footer>
+      <Cookies isOpen={isOpen} toggleDrawer={toggleDrawer} />
     </React.Fragment>
   );
 };
