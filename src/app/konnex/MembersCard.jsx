@@ -3,32 +3,32 @@ import React from "react";
 
 export const MembersCard = () => {
     return (
-        <div class="row medium-uncollapse">
+        <div className="row medium-uncollapse">
             {memberDetails?.length >= 1 &&
                 memberDetails?.map((data) => {
-                    return <div class="large-4 medium-6 column contact-person-item">
+                    return <div className="large-4 medium-6 column contact-person-item">
                         <img
-                            class="thmb full-width"
+                            className="thmb full-width"
                             src={data?.img}
                             alt="Zeitarbeit Köln"
                         />
-                        <div class="row">
-                            <div class="medium-7 ">
-                                <div class="name yellow-text p-bigger">
+                        <div className="row">
+                            <div className="medium-7 ">
+                                <div className="name yellow-text p-bigger">
                                     <p>{data?.name}</p>
                                 </div>
                             </div>
-                            <div class="medium-5 column actions">
+                            <div className="medium-5 column actions">
                                 <a href="mailto:i.yelen@konnex-zeitarbeit.de">
-                                    <span class="icon icon-mail-icon">
-                                        <span class="path1"></span>
-                                        <span class="path2"></span>
+                                    <span className="icon icon-mail-icon">
+                                        <span className="path1"></span>
+                                        <span className="path2"></span>
                                     </span>
                                 </a>
                                 <a href="../wp-content/uploads/2015/04/Isa-Yelen.vcf">
-                                    <span class="icon icon-v-card-icon">
-                                        <span class="path1"></span>
-                                        <span class="path2"></span>
+                                    <span className="icon icon-v-card-icon">
+                                        <span className="path1"></span>
+                                        <span className="path2"></span>
                                     </span>
                                 </a>
                                 <a
@@ -36,15 +36,15 @@ export const MembersCard = () => {
                                     rel="noreferrer"
                                     target="_blank"
                                 >
-                                    <span class="icon icon-xing-icon">
-                                        <span class="path1"></span>
-                                        <span class="path2"></span>
-                                        <span class="path3"></span>
+                                    <span className="icon icon-xing-icon">
+                                        <span className="path1"></span>
+                                        <span className="path2"></span>
+                                        <span className="path3"></span>
                                     </span>
                                 </a>
                             </div>
                         </div>
-                        <p class="position">{data?.description}</p>
+                        <p className="position">{data?.description}</p>
                     </div>;
                 })}
         </div>

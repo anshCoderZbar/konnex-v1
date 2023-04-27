@@ -31,7 +31,7 @@ export const MasterVendorManagement = () => {
                     <h1 className="section-title">
                         Master-Vendor-Management – das Rundum-sorglos-Paket
                     </h1>
-                    <div class="box">
+                    <div className="box">
                         <p>
                             <strong>
                                 Wenn in Ihrem Unternehmen regelmäßig mehrere Zeitarbeitnehmer
