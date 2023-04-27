@@ -1,64 +1,67 @@
-import { navbarData } from "mock/navbar";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { navbarData } from "mock/navbar";
+
 export const Navbar = () => {
   const [active, setActive] = useState(false);
-  const [subMenu, setSubMenu] = useState(false);
+  const [subMenuIndex, setSubMenuIndex] = useState(-1);
 
   return (
     <div id="main-nav">
       <div className="row">
         <div className="large-12 column">
           <div className="contain-to-grid">
-            <nav
-              className={`top-bar ${active ? "expanded" : ""}`}
-              data-options="back_text:zurück;mobile_show_parent_link:false;"
-            >
+            <nav className={`top-bar ${active ? "expanded" : ""}`}>
               <ul className="title-area">
                 <li className="name"></li>
                 <li className="toggle-topbar menu-icon">
-                  <a href="/" onClick={() => setActive(!active)}>
+                  <a href="#" onClick={() => setActive(!active)}>
                     <span>Menu</span>
                   </a>
                 </li>
               </ul>
               <section
                 className="top-bar-section"
-                style={{ left: subMenu ? "-100%" : "" }}
+                style={{ left: subMenuIndex >= 0 ? "-100%" : "" }}
               >
                 <ul id="menu-hauptnavigation" className="">
                   {navbarData.length >= 1 &&
                     navbarData.map((data, i) => {
+                      const isSubMenuActive = subMenuIndex === i;
                       return (
                         <li
                           key={i}
                           id={data?.id}
                           onClick={() => {
-                            data?.subMenu?.length >= 1
-                              ? setSubMenu(!subMenu)
-                              : setSubMenu(false);
+                            if (data?.subMenu?.length >= 1) {
+                              setSubMenuIndex(isSubMenuActive ? -1 : i);
+                            } else {
+                              setSubMenuIndex(-1);
+                            }
                           }}
-                          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${data?.subMenu?.length >= 1 ? "has-dropdown" : " "
-                            } menu-item-573 ${subMenu ? "moved" : ""}`}
+                          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${data?.subMenu?.length >= 1 ? " has-dropdown" : ""
+                            } menu-item-573 ${isSubMenuActive ? "moved" : ""
+                            }`}
                         >
                           <Link to={data?.slug ? data?.slug : ""}>
                             {data?.title}
                           </Link>
                           <ul className="sub-menu dropdown">
-                            {data?.subMenu?.length >= 1
-                              ? data?.subMenu?.map((data) => {
+                            {data?.subMenu?.length >= 1 &&
+                              data?.subMenu?.map((subMenuItem) => {
                                 return (
                                   <li
-                                    key={data?.id}
+                                    key={subMenuItem?.id}
                                     id="menu-item-299"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"
                                   >
-                                    <Link to={data?.slug}>{data?.title}</Link>
+                                    <Link to={subMenuItem?.slug}>
+                                      {subMenuItem?.title}
+                                    </Link>
                                   </li>
                                 );
-                              })
-                              : ""}
+                              })}
                           </ul>
                         </li>
                       );

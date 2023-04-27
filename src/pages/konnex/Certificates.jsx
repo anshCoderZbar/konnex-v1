@@ -58,7 +58,7 @@ export const Certificates = () => {
                                 <img
                                     decoding="async"
                                     loading="lazy"
-                                    class="alignleft wp-image-646 size-full"
+                                    className="alignleft wp-image-646 size-full"
                                     src="https://konnex-zeitarbeit.de/wp-content/uploads/2015/04/konnex-zeitarbeit-koeln-krefeld-zertifiziert1.jpg"
                                     alt="konnex-zeitarbeit-koeln-krefeld-zertifiziert"
                                     width="74"
@@ -96,7 +96,7 @@ export const Certificates = () => {
                                     <img
                                         decoding="async"
                                         loading="lazy"
-                                        class="alignleft wp-image-819 size-full"
+                                        className="alignleft wp-image-819 size-full"
                                         src="https://konnex-zeitarbeit.de/wp-content/uploads/2015/04/konnex-zeitarbeit-koeln-krefeld-zertifiziert1.jpg"
                                         alt=""
                                         width="74"
