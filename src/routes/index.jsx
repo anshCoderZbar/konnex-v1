@@ -22,6 +22,8 @@ import { ContactPerson } from "pages/konnex/ContactPerson";
 import { Certificates } from "pages/konnex/Certificates";
 import { SponshirShipPage } from "pages/konnex/SponshirShipPage";
 import { ChineseSponsoring } from "pages/konnex/ChineseSponsoring";
+import { Imprint } from "app/footer/Imprint";
+import { DataProtection } from "app/footer/DataProtection";
 
 const AllRoutes = () => {
   return (
@@ -185,6 +187,22 @@ const AllRoutes = () => {
           element={
             <PublicRoutes>
               <ChineseSponsoring />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/imprint"
+          element={
+            <PublicRoutes>
+              <Imprint />
+            </PublicRoutes>
+          }
+        />
+        <Route
+          path="/data-protection"
+          element={
+            <PublicRoutes>
+              <DataProtection />
             </PublicRoutes>
           }
         />
