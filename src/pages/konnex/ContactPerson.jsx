@@ -25,8 +25,8 @@ export const ContactPerson = () => {
             </div>
             <div className="row">
                 <div className="medium tablet-portrait-12">
-                    <h1 class="section-title">Ihre Ansprechpartner</h1>
-                    <div class="box no-padd">
+                    <h1 className="section-title">Ihre Ansprechpartner</h1>
+                    <div className="box no-padd">
                         <MembersCard />
                     </div>
                 </div>
