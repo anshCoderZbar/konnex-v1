@@ -15,6 +15,7 @@ import adultImg from "assets/slide/konnex-zeitarbeit-koeln-krefeld-sc-koeln-muel
 import logoImg from "assets/slide/konnex-zeitarbeit-koeln-krefeld-sc-koeln-muelheim-nord-logo.jpg";
 
 export const SponshirShipPage = () => {
+
     return (
         <>
             <Banner desktopImg={desktop} mobileImg={mobile} />
@@ -59,7 +60,7 @@ export const SponshirShipPage = () => {
                                 <img
                                     decoding="async"
                                     loading="lazy"
-                                    class="alignleft wp-image-746 size-full"
+                                    className="alignleft wp-image-746 size-full"
                                     src={childrenImg}
                                     alt="konnex-zeitarbeit-koeln-krefeld-sc-koeln-muelheim-nord-1"
                                     width="900"
@@ -89,7 +90,7 @@ export const SponshirShipPage = () => {
                                 <img
                                     decoding="async"
                                     loading="lazy"
-                                    class="alignleft wp-image-747 size-full"
+                                    className="alignleft wp-image-747 size-full"
                                     src={adultImg}
                                     alt="konnex-zeitarbeit-koeln-krefeld-sc-koeln-muelheim-nord-2"
                                     width="900"
@@ -107,7 +108,7 @@ export const SponshirShipPage = () => {
                                 <img
                                     decoding="async"
                                     loading="lazy"
-                                    class="alignleft wp-image-748 size-full"
+                                    className="alignleft wp-image-748 size-full"
                                     src={logoImg}
                                     alt="konnex-zeitarbeit-koeln-krefeld-sc-koeln-muelheim-nord-logo"
                                     width="900"

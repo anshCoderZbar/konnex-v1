@@ -20,8 +20,8 @@ export const Imprint = () => {
             </div>
             <div className="row">
                 <div className="medium-8 tablet-portrait-12 ">
-                    <h1 class="section-title">Impressum </h1>
-                    <div class="box">
+                    <h1 className="section-title">Impressum </h1>
+                    <div className="box">
                         <p>
                             <strong>
                                 Angaben gemäß § 5 TMG:
@@ -209,7 +209,7 @@ export const Imprint = () => {
                             <br />
                             <em>
                                 <a
-                                    class=""
+                                    className=""
                                     href="http://www.intuitive-fotografie.de/"
                                     target="_blank"
                                     rel="noreferrer"
