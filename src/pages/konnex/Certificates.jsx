@@ -66,7 +66,7 @@ export const Certificates = () => {
                                 />
                             </a>
                         </p>
-                        <p style={{ paddingLeft: "120px;" }}>
+                        <p style={{ paddingLeft: "120px" }}>
                             <strong>iGZ Mitgliedsurkunde (Tarifpartner) </strong>
                             <span style={{ lineHeight: "1.5;" }}>
                                 Interessenverband Deutscher Zeitarbeitsunternehmen e. V.{" "}
@@ -105,10 +105,10 @@ export const Certificates = () => {
                                 </a>
                             </strong>
                         </p>
-                        <p style={{ paddingLeft: "120px;" }}>
+                        <p style={{ paddingLeft: "120px" }}>
                             <strong>Erlaubnis zur Arbeitnehmerüberlassung </strong>
-                            <span style={{ lineHeight: "1.5;" }}>Bundesagentur für Arbeit </span>
-                            <span style={{ lineHeight: "1.5;" }}>
+                            <span style={{ lineHeight: "1.5" }}>Bundesagentur für Arbeit </span>
+                            <span style={{ lineHeight: "1.5" }}>
                                 <span style={{ textDecoration: "underline" }}>
                                     <span style={{ color: "#144295", textDecoration: "underline" }}>
                                         <a

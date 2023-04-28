@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1025) {
+      if (window?.innerWidth < 1025) {
         setMoved(true);
       } else {
         setMoved(false);
