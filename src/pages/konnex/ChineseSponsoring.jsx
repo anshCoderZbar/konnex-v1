@@ -32,8 +32,8 @@ export const ChineseSponsoring = () => {
                         Sponsoring – wir unterstützen den Sport
                     </h1>
                     <div className="box">
-                        <p class="p1">
-                            <span class="s1">
+                        <p className="p1">
+                            <span className="s1">
                                 <strong>
                                     Wir brauchen keine langen Texte. Wir sind Sponsor der{" "}
                                     <a
@@ -49,7 +49,7 @@ export const ChineseSponsoring = () => {
                                 Art des
                             </span>{" "}
                             Sifus,{" "}
-                            <span class="s1">
+                            <span className="s1">
                                 die Schüler zu trainieren und zu behandeln sehr zusagt, sponsore
                                 ich diese Schule. In dieser Schule gelten noch die alten guten
                                 chinesischen Traditionen: Disziplin, Selbstbeherrschung und Mut,
@@ -58,12 +58,12 @@ export const ChineseSponsoring = () => {
                             </span>
                             „Ertan Bicakci“.
                         </p>
-                        <p class="p1">
-                            <span class="s1" style={{ color: "#f7a600" }}>
+                        <p className="p1">
+                            <span className="s1" style={{ color: "#f7a600" }}>
                                 <b>Fight Night am 13.04.2019</b>
                             </span>
                         </p>
-                        <p class="p1">
+                        <p className="p1">
                             <em>
                                 <a href={gameImg}
                                     target="_blank"
@@ -72,7 +72,7 @@ export const ChineseSponsoring = () => {
                                     <img
                                         decoding="async"
                                         loading="lazy"
-                                        class="alignnone wp-image-1441 size-full"
+                                        className="alignnone wp-image-1441 size-full"
                                         src={gameImg}
                                         alt="Fight Night"
                                         width="1144"
@@ -83,14 +83,14 @@ export const ChineseSponsoring = () => {
 
                             </em>
                         </p>
-                        <p class="p1">
+                        <p className="p1">
                             <strong>
-                                <span class="s1">Weitere Links:</span>
+                                <span className="s1">Weitere Links:</span>
                             </strong>
                         </p>
-                        <p class="p1">
+                        <p className="p1">
                             <em>
-                                <span class="s2">
+                                <span className="s2">
                                     <a
                                         href="http://www.chinese-boxing-koeln.de/news/news_190413_ankuendigung.html"
                                         target="_blank"
@@ -102,12 +102,12 @@ export const ChineseSponsoring = () => {
                                 </span>
                             </em>
                             <em>
-                                <span class="s2">
+                                <span className="s2">
                                     <br />
                                 </span>
                             </em>
                         </p>
-                        <p class="p1">
+                        <p className="p1">
                             <em>                                               </em>
                         </p>
                     </div>

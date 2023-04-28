@@ -20,8 +20,8 @@ export const DataProtection = () => {
             </div>
             <div className="row">
                 <div className="medium-8 tablet-portrait-12 ">
-                    <h1 class="section-title">Datenschutz </h1>
-                    <div class="box">
+                    <h1 className="section-title">Datenschutz </h1>
+                    <div className="box">
                         <p><strong>1. Datenschutz auf einen Blick</strong></p>
                         <p><strong>Allgemeine Hinweise</strong></p>
                         <p>
@@ -529,15 +529,15 @@ export const DataProtection = () => {
                         </p>
                     </div>
                 </div>
-                <div class="medium-4 tablet-portrait-12 column"></div>
+                <div className="medium-4 tablet-portrait-12 column"></div>
             </div>
-            <div class="mar-t20 row hide-for-small-only" data-equalizer>
-                <div class="medium-4 tablet-portrait-12 column">
-                    <h3 class="section-title">Datenschutz</h3>
-                    <div class="box no-padd grey p-smaller" data-equalizer-watch>
-                        <div class="inner-padd">
+            <div className="mar-t20 row hide-for-small-only" data-equalizer>
+                <div className="medium-4 tablet-portrait-12 column">
+                    <h3 className="section-title">Datenschutz</h3>
+                    <div className="box no-padd grey p-smaller" data-equalizer-watch>
+                        <div className="inner-padd">
                             <p>1. Datenschutz auf einen Blick Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen &#8230;</p>
-                            <a href="index.html" class="more-btn"><span class="icon-Pfeil-rechts"></span>mehr</a>
+                            <a href="index.html" className="more-btn"><span className="icon-Pfeil-rechts"></span>mehr</a>
                         </div>
                     </div>
                 </div>

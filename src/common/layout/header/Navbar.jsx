@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { navbarData } from "mock/navbar";
@@ -6,6 +6,23 @@ import { navbarData } from "mock/navbar";
 export const Navbar = () => {
   const [active, setActive] = useState(false);
   const [subMenuIndex, setSubMenuIndex] = useState(-1);
+  const [moved, setMoved] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1025) {
+        setMoved(true);
+      } else {
+        setMoved(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div id="main-nav">
@@ -41,7 +58,7 @@ export const Navbar = () => {
                             }
                           }}
                           className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${data?.subMenu?.length >= 1 ? " has-dropdown" : ""
-                            } menu-item-573 ${isSubMenuActive ? "moved" : ""
+                            } menu-item-573 ${moved && isSubMenuActive ? "moved" : ""
                             }`}
                         >
                           <Link to={data?.slug ? data?.slug : ""}>
