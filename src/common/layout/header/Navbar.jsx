@@ -57,9 +57,11 @@ export const Navbar = () => {
                               setSubMenuIndex(-1);
                             }
                           }}
-                          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${data?.subMenu?.length >= 1 ? " has-dropdown" : ""
-                            } menu-item-573 ${moved && isSubMenuActive ? "moved" : ""
-                            }`}
+                          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${
+                            data?.subMenu?.length >= 1 ? " has-dropdown" : ""
+                          } menu-item-573 ${
+                            moved && isSubMenuActive ? "moved" : ""
+                          }`}
                         >
                           <Link to={data?.slug ? data?.slug : ""}>
                             {data?.title}
